@@ -1,0 +1,11 @@
+split|k|definition|n_test_interactions|n_users|n_users_unseen|rmse_known_users|mae_known_users
+random|10|train_interactions < 10|0|0|0||
+random|5|train_interactions < 5|0|0|0||
+random|2|train_interactions < 2|0|0|0||
+random|1|train_interactions < 1|0|0|0||
+random|0|train_interactions == 0 (unseen user)|0|0|0||
+temporal|10|train_interactions < 10|8618|98|97|1.5800372560127822|1.2819544225931168
+temporal|5|train_interactions < 5|8618|98|97|1.5800372560127822|1.2819544225931168
+temporal|2|train_interactions < 2|8618|98|97|1.5800372560127822|1.2819544225931168
+temporal|1|train_interactions < 1|8582|97|97||
+temporal|0|train_interactions == 0 (unseen user)|8582|97|97||

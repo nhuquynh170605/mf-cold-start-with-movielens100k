@@ -1,0 +1,13 @@
+split|coverage_group|n_interactions|n_users|n_items|evaluable_by_trained_mf|rmse|mae
+random_validation|known_user_item|9986|920|1234|1|0.959410632323795|0.7506914893640871
+random_validation|unseen_item|14|10|13|0||
+random_test|known_user_item|9978|928|1229|1|0.9638329862789986|0.7570741271033008
+random_test|unseen_item|22|16|19|0||
+temporal_validation|known_user_item|1519|80|737|1|1.0431940876536803|0.808334358630014
+temporal_validation|unseen_user|8428|116|1093|0||
+temporal_validation|unseen_user_item|38|27|17|0||
+temporal_validation|unseen_item|15|14|6|0||
+temporal_test|unseen_user|8507|96|1240|0||
+temporal_test|unseen_user_item|75|31|39|0||
+temporal_test|unseen_item|74|24|20|0||
+temporal_test|known_user_item|1344|66|698|1|1.023314122784782|0.8179089934343383

@@ -1,0 +1,31 @@
+split|k|definition|n_test_interactions|n_users|n_users_unseen|rmse_known_users|mae_known_users|seed
+random|10|train_interactions < 10|0|0|0|||42
+random|5|train_interactions < 5|0|0|0|||42
+random|2|train_interactions < 2|0|0|0|||42
+random|1|train_interactions < 1|0|0|0|||42
+random|0|train_interactions == 0 (unseen user)|0|0|0|||42
+temporal|10|train_interactions < 10|8618|98|97|1.8492464810779639|1.5704841481314764|42
+temporal|5|train_interactions < 5|8618|98|97|1.8492464810779639|1.5704841481314764|42
+temporal|2|train_interactions < 2|8618|98|97|1.8492464810779639|1.5704841481314764|42
+temporal|1|train_interactions < 1|8582|97|97|||42
+temporal|0|train_interactions == 0 (unseen user)|8582|97|97|||42
+random|10|train_interactions < 10|0|0|0|||43
+random|5|train_interactions < 5|0|0|0|||43
+random|2|train_interactions < 2|0|0|0|||43
+random|1|train_interactions < 1|0|0|0|||43
+random|0|train_interactions == 0 (unseen user)|0|0|0|||43
+temporal|10|train_interactions < 10|8618|98|97|1.828881324460624|1.5471894807285733|43
+temporal|5|train_interactions < 5|8618|98|97|1.828881324460624|1.5471894807285733|43
+temporal|2|train_interactions < 2|8618|98|97|1.828881324460624|1.5471894807285733|43
+temporal|1|train_interactions < 1|8582|97|97|||43
+temporal|0|train_interactions == 0 (unseen user)|8582|97|97|||43
+random|10|train_interactions < 10|0|0|0|||44
+random|5|train_interactions < 5|0|0|0|||44
+random|2|train_interactions < 2|0|0|0|||44
+random|1|train_interactions < 1|0|0|0|||44
+random|0|train_interactions == 0 (unseen user)|0|0|0|||44
+temporal|10|train_interactions < 10|8618|98|97|1.7564397526167097|1.4578531053331163|44
+temporal|5|train_interactions < 5|8618|98|97|1.7564397526167097|1.4578531053331163|44
+temporal|2|train_interactions < 2|8618|98|97|1.7564397526167097|1.4578531053331163|44
+temporal|1|train_interactions < 1|8582|97|97|||44
+temporal|0|train_interactions == 0 (unseen user)|8582|97|97|||44
