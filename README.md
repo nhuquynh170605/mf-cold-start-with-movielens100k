@@ -49,7 +49,7 @@ python mf_cold_start_experiment.py \
   --dim 64 \
   --lr 0.001 \
   --seed 42 \
-  --output-dir results/mf_cold_start_v2 \
+  --output-dir results/mf_cold_start_v3 \
   --patience 3 \
   --seeds 42,43,44
 ```
@@ -60,7 +60,7 @@ phẩy để dễ đọc khi mở trong editor hoặc import vào spreadsheet.
 
 ## 4. Cách đọc kết quả
 
-Các file chính trong `results/mf_cold_start_v2/`:
+Các file chính trong `results/mf_cold_start_v3/`:
 
 - `summary.csv`: RMSE/MAE tổng quát cho train, validation và test.
 - `split_statistics.csv`: số user/item trong mỗi split và số đối tượng unseen.
@@ -68,6 +68,8 @@ Các file chính trong `results/mf_cold_start_v2/`:
   `unseen_user`, `unseen_item`, `unseen_user_item`.
 - `cold_start_groups_*.csv`: kết quả theo số interaction của user trong train.
 - `cold_start_k_*.csv`: kết quả với quy ước cold-start `train_interactions < k`.
+  Version 3 dùng các giá trị `k=10,5,2,1`; `k=1` đã bao gồm user có 0
+  interaction trong train nên không ghi thêm một dòng `k=0` trùng lặp.
 - `training_*.csv`: loss và validation metrics theo epoch.
 - `learning_curve_*.png`: biểu đồ quá trình huấn luyện.
 - `baseline_results.csv`: kết quả từng seed của global/user/item mean,

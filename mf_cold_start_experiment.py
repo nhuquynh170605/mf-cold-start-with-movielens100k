@@ -19,8 +19,8 @@ from torch.utils.data import DataLoader, TensorDataset
 #   2) Temporal 80/10/10
 #
 # Cold-start:
-#   k=10,5,2,1  -> users with train_interactions < k
-#   k=0         -> special case: users with 0 train interactions
+#   k=10,5,2  -> users with train_interactions < k
+#   k=1         -> users with 0 train interactions
 #
 # Outputs:
 #   results/mf_cold_start/
@@ -369,11 +369,9 @@ def cold_k_table(model, df, train_user_counts, device, split_name):
     For k = 10,5,2,1:
       cold-start = train interaction count < k
 
-    For k = 0:
-      special thesis convention:
-      cold-start = train interaction count == 0
-
-    This special handling is necessary because count < 0 is impossible.
+    The k=1 row already represents users with 0 train interactions because
+    train interaction counts are non-negative integers. A separate k=0 row
+    would duplicate that group while changing the meaning of the threshold.
     """
     work = df.copy()
     work["train_interactions"] = cold_start_masks(
@@ -415,22 +413,6 @@ def cold_k_table(model, df, train_user_counts, device, split_name):
                 "mae_known_users": mae,
             }
         )
-
-    # k=0: special "unseen user" experiment.
-    g = work[work["train_interactions"] == 0]
-
-    rows.append(
-        {
-            "split": split_name,
-            "k": 0,
-            "definition": "train_interactions == 0 (unseen user)",
-            "n_test_interactions": len(g),
-            "n_users": g["user_id"].nunique(),
-            "n_users_unseen": g["user_id"].nunique(),
-            "rmse_known_users": np.nan,
-            "mae_known_users": np.nan,
-        }
-    )
 
     return pd.DataFrame(rows)
 

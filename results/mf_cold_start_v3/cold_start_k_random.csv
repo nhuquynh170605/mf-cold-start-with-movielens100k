@@ -1,0 +1,5 @@
+split|k|definition|n_test_interactions|n_users|n_users_unseen|rmse_known_users|mae_known_users
+random|10|train_interactions < 10|0|0|0||
+random|5|train_interactions < 5|0|0|0||
+random|2|train_interactions < 2|0|0|0||
+random|1|train_interactions < 1|0|0|0||
