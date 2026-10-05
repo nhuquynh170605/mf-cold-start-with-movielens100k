@@ -1,3 +1,0 @@
-split|train_interactions|val_interactions|test_interactions|train_users|val_users|test_users|val_unseen_users|test_unseen_users|train_items|val_items|test_items|val_unseen_items|test_unseen_items
-random|80000|10000|10000|943|920|928|0|0|1651|1247|1248|13|19
-temporal|80000|10000|10000|751|197|166|116|97|1616|1200|1343|21|48

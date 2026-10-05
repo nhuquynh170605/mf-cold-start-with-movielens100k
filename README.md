@@ -12,7 +12,9 @@ Project xây dựng một baseline recommender system bằng Matrix Factorizatio
 có thêm thông tin nội dung.
 
 Báo cáo version 1 nằm trong [REPORT.md](REPORT.md); báo cáo cải tiến version 2
-nằm trong [REPORT_v2.md](REPORT_v2.md).
+nằm trong [REPORT_v2.md](REPORT_v2.md). Bản tổng hợp cuối cùng, dùng kết quả
+đã làm sạch trong `results/mf_cold_start_v3/`, nằm trong
+[REPORT_FINAL.md](REPORT_FINAL.md).
 
 ## 2. Phương pháp
 

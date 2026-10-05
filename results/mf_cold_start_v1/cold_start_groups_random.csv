@@ -1,2 +1,0 @@
-split|group|n_interactions|n_users|evaluable_by_mf|rmse|mae|mean_train_interactions
-random|10+|10000|928|10000|0.9665503549329743|0.7583561582192778|161.6142

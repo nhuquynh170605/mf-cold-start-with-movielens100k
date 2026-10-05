@@ -1,4 +1,0 @@
-split|group|n_interactions|n_users|evaluable_by_mf|rmse|mae|mean_train_interactions
-temporal|0_unseen|8582|97|0|||0.0
-temporal|1|36|1|36|1.7564397526167097|1.4578531053331163|1.0
-temporal|10+|1382|68|1382|1.1046079706975758|0.8595375135303751|180.3328509406657
